@@ -1,0 +1,74 @@
+admin   hxtz19820314zz
+
+
+Gxyx2CGUYBs6V2CJ
+root
+47.96.130.44
+
+admin
+Z236e4my
+mysql  -uda_admin -p8ME1m27S
+mysql_upgrade  -u da_admin -p 8ME1m27S
+mysql=8ME1m27S
+mysqluser=da_admin
+adminname=admin
+adminpass=8ME1m27S
+
+#网站数据库
+admin_data
+sCF19%z4
+mysql -uadmin_data -psCF19%z4
+use admin_data;
+source admin_user-new.sql;
+
+#允许指定的IP连接
+GRANT ALL PRIVILEGES ON *.* TO haohaodata_data@"121.196.224.192" IDENTIFIED BY "hZL77-a9" WITH GRANT OPTION;
+FLUSH PRIVILEGES; 
+
+	
+
+mysqldump admin_data -uadmin_data -psCF19%z4 --add-drop-table | mysql haohaodata_data -uhaohaodata_data -phZL77-a9
+
+
+c.dai898.cn
+c.daibaoyun.cn
+c.daidaifafa.cn
+c.daidaifafa.com
+c.dushuju.cc
+c.dushuju.com.cn
+c.dushuju.net
+c.dushuju.net.cn
+c.haohaoshuju.cn
+c.haohaoshuju.com
+c.haoxi360.com
+c.linghuaqiandai.cn
+c.linghuaqiandai.com
+c.linghuaqingdai.com
+c.litian88.com
+c.yunshuju.net.cn
+c.zhongguotian.cc
+c.zhongguotian.cn
+c.zhongguotian.com.cn
+c.zhongguotian.vip
+
+www.linghuaqian.com
+c.linghuaqiandai.cn
+c.dai898.cn
+c.daibaoyun.cn
+c.daidaifafa.cn
+c.daidaifafa.com
+c.dushuju.cc
+c.dushuju.com.cn
+c.dushuju.net
+c.dushuju.net.cn
+c.haohaoshuju.cn
+c.haohaoshuju.com
+c.haoxi360.com
+c.linghuaqiandai.com
+c.linghuaqingdai.com
+c.litian88.com
+c.yunshuju.net.cn
+c.zhongguotian.cc
+c.zhongguotian.cn
+c.zhongguotian.com.cn
+c.zhongguotian.vip
