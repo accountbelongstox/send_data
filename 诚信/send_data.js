@@ -1,11 +1,11 @@
 const
-	file = "11.15.400-10.csv",
+	file = "1100.csv",
 	fs = require(`fs`),
 	path = require(`path`),
 	excel_xlsx = require('excel-xlsx'),
 	crypto = require('crypto'),
 	iconv = require(`iconv-lite`),
-	time_scope = [`2018-11-15 10:00:00`,`-2018-11-06 07:01:00`],
+	time_scope = [`2018-11-18 8:39:00`,`-2018-11-06 07:01:00`],
 	file_path = path.join(__dirname,file),
 	file_path_parse = path.parse(file_path),
 	new_file_path = path.join(__dirname,`${file_path_parse.name}`)
