@@ -58,6 +58,14 @@ www.jiuchangkuaidai.com/admin
 账号 70002
 密码 147258
 
+10050
+10086
+10089
+10083
+10070
+10087
+10040   123456
+
 5  贴心钱包后台
 http://txqb.leyi44.com:9191/login
 
@@ -187,7 +195,8 @@ tg001
 
 http://app.qianbao665.com/channel/channelLogin.html
 千宝钱包的后台链接
-账号密码都是：rk
+账号密码都是：
+rk
 
 http://47.96.24.144:8089/admin/index.html
 admin

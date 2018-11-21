@@ -1,11 +1,11 @@
 const
-	file = `gy.csv`,
+	file = `21.500.2.csv`,
 	fs = require(`fs`),
 	path = require(`path`),
 	excel_xlsx = require('excel-xlsx'),
 	crypto = require('crypto'),
 	iconv = require(`iconv-lite`),
-	time_scope = [`2018-11-19 09:30:00`,`2018-11-19 23:10:00`],
+	time_scope = [`2018-11-21 08:30:00`,`-2018-11-21 09:10:00`],
 	file_path = path.join(__dirname,file),
 	file_path_parse = path.parse(file_path),
 	new_file_path = path.join(__dirname,`${file_path_parse.name}`)
@@ -220,7 +220,7 @@ function isTime(v){
 	isTime = null
 	;
 	v.forEach((item,index)=>{
-		if(/^20\d{2}/.test(item) || (/^\d+$/.test(item) && item.length === timeStampLenth)){
+		if(/^201\d{1}/.test(item) || (/^\d+$/.test(item) && item.length === timeStampLenth)){
 			isTime = index;
 		}
 	});
