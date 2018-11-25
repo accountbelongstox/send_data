@@ -2,66 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c75e8d8c-8da0-43e7-9b2e-d69858d019ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../kcanr2dbrm/余量_f_web.shzdrzzl.com_处理_.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../kcanr2dbrm/余量_f_web.shzdrzzl.com_处理_.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ooooo/20.100.1.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ooooo/20.100.2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ooooo/20.100.3.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ooooo/20.100.4.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ooooo/20.400.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ooooo/200.100.3.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ooooo/send_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ooooo/send_data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/1500.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/20.600.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/20.600.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/20.800.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/2000.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/GY-2200.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/GY-2200.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/send_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../余生你好/send_data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/余生你好 -余量.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/工作簿3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/拿3天内的余量-急贷王.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/拿3天内的余量-急贷王.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/现款现金贷_2018-11-19 21_46_34.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../余生你好/现款现金贷_2018-11-19 21_46_34.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/隔天专用余量-2-极速贷_2018-11-07 09_57_06.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/隔天专用余量2-借贷平台申请表_2018-11-07 09_51_37.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/隔天专用余量_f_web.shzdrzzl-混淆版.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../余生你好/隔天专用余量_f_web.shzdrzzl-混淆版.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../信息时代/100.1.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../信息时代/100.2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../信息时代/20.100.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../信息时代/20.ss.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../信息时代/200.3.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../信息时代/gy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../信息时代/gy.ttt.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../信息时代/gy.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../信息时代/ss.100.1.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../信息时代/ss.100.2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1000.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/18.2000.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/19.1000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20.ss.2810.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20.ss.2810.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2950ss.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2950ss.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/603.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/603.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GY.2661.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GY.2661.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GY2085.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GY2984.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GY2984.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GY735.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GY735.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/21.500.2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../信息时代/21.500.2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GY2683.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GY2683.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pt-n1005.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pt-n1005.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/send_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/send_data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/宋-实际发送.txt" beforeDir="false" afterPath="$PROJECT_DIR$/宋-实际发送.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../采集资料.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../采集资料.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../青春/19.100.n.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../青春/19.100.n.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../青春/19.250.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../青春/19.250.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../青春/20.300.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../青春/300..xlsx" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -119,22 +66,20 @@
       <option name="presentableId" value="Default" />
       <updated>1542761713605</updated>
       <workItem from="1542761715030" duration="4000" />
+      <workItem from="1542777107118" duration="1000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4000" />
+    <option name="totallyTimeSpent" value="5000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1818" height="981" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24985963" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -142,6 +87,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
