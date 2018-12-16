@@ -1,15 +1,20 @@
-const
-	file = "100.csv",
+let
+	file = `12.16.ss.200.csv`,
 	fs = require(`fs`),
 	path = require(`path`),
 	excel_xlsx = require('excel-xlsx'),
-	crypto = require('crypto'),
+	crypto = require('crypto'), 
 	iconv = require(`iconv-lite`),
-	time_scope = [`2018-11-21 12:59:00`,`-2018-11-06 07:01:00`],
+	time_scope = [`2018-12-16 10:05:00`,`-2018-12-11 12:59:59`],
 	file_path = path.join(__dirname,file),
 	file_path_parse = path.parse(file_path),
-	new_file_path = path.join(__dirname,`${file_path_parse.name}`)
+	file_new_name = file_path_parse.name,
+	new_file_path = path.join(__dirname,`${file_new_name}`)
 ;
+
+console.log(`\n`);
+console.log(`name : \n ${file}\n`);
+console.log(`save in : \n ${file_new_name}.xlsx\n`);
 let
 file_content_arr = csv_parse(file_path),
 time_scopes = create_xls_times(file_content_arr,time_scope,true,false)
@@ -79,10 +84,21 @@ function save_to_xlsx(arr){
 		});
 		listData.push(listObject);
 	});
+	
+	//去空
+	//listData.splice(0,1);
+	listData.splice(listData.length,1);
+	//乱序
+	listData.sort(function(a,b){ return Math.random()>.5 ? -1 : 1;});
+	
+	console.log(`len : \n ${listData.length}`);
+	new_file_path+=`.${listData.length}`;
+	
 	result = {
 		header,
 		listData
 	};
+	
 	excel_xlsx(header, listData, new_file_path); 
 }
 
@@ -110,8 +126,10 @@ function array_to_csv_content(arr){
 function create_xls_times(create_that,time_scope,time_fmt=false,_sort=true){
 	let
 		time_stamp_scopes = [],
-		time_start = timeFormat(false,time_scope[0]),
-		time_end = timeFormat(false,time_scope[1]),
+		time_start_s1 = time_scope[0],
+		time_start_s2 = time_scope[1],
+		time_start = timeFormat(false,time_start_s1),
+		time_end = timeFormat(false,time_start_s2),
 		len = (function (){
 			if(typeof create_that !== `number`){
 				return create_that.length;
@@ -120,6 +138,7 @@ function create_xls_times(create_that,time_scope,time_fmt=false,_sort=true){
 			}
 		})()
 	;
+	console.log(`time : \n ${time_start_s1}\n ${time_start_s2}\n`);
 	for(let i = -1;i < len;i++){
 		let
 		time_random = RandomNumBoth(time_start,time_end)
@@ -139,7 +158,7 @@ function create_xls_times(create_that,time_scope,time_fmt=false,_sort=true){
 function csv_parse(file_path,_sort){
 	let
 	file_content = fs.readFileSync(file_path,{encoding:"binary"}),
-	file_content_arr = ( iconv.decode(file_content,"GBK") ).split(/[\r\n]+/),
+	file_content_arr = ( iconv.decode(  (Buffer.from(file_content,"binary")),"GBK") ).split(/[\r\n]+/),
 	n_arr = []
 	;
 	file_content_arr.forEach((concent)=>{
@@ -220,7 +239,7 @@ function isTime(v){
 	isTime = null
 	;
 	v.forEach((item,index)=>{
-		if(/^20\d{2}/.test(item) || (/^\d+$/.test(item) && item.length === timeStampLenth)){
+		if(/^201\d{1}/.test(item) || (/^\d+$/.test(item) && item.length === timeStampLenth)){
 			isTime = index;
 		}
 	});

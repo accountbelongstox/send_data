@@ -59,10 +59,8 @@ www.jiuchangkuaidai.com/admin
 密码 147258
 
 10050
-10086
 10089
 10083
-10070
 10087
 10040   123456
 
@@ -93,6 +91,7 @@ rk
 
 能借钱推广链接：http://tga.shzdrzzl.com/?channel=104
 后台链接：http://web.shzdrzzl.com/admin/
+http://syyulin.com.cn/
 账号: 104
 密码: 123456
 
@@ -190,7 +189,7 @@ https://cmanager.shanjiedao.com/login/MOIuC
 
 http://www.shuixinhua.com/qudao/channelLogin.html
 http://www.shuixinhua.com/share/index.html?channelId=tg001
-tg001
+tg002
 123456
 
 http://app.qianbao665.com/channel/channelLogin.html

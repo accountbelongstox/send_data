@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f7b2567-1e93-4baf-bf1c-f80f7de5bad4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12123/1000.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12123/500.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12123/500.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12123/f余量_web.shzdrzzl.com_admin-2018-11-19-09-06-32.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12123/gy.500.2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12123/gy.500.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12123/send_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12123/工作簿2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12123/工作簿2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../24.2500.ss.处理.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25.实时处理.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../25.实时处理.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../f_app.3chuishou.com_hqk888_index.html-2018-11-02-12-56-23.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../f_app.3chuishou.com_hqk888_index.html-2018-11-02-12-56-23.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../f_manager.hzkunhang.com-2018-11-16-10-54-42.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../f_manager.hzkunhang.com-2018-11-16-10-54-42.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../f_web.shzdrzzl.com_admin-2018-11-19-09-06-32.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../f_web.shzdrzzl.com_admin-2018-11-19-09-06-32.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../f_www.jiuchangkuaidai.com_admin-2018-10-28-01-07-04.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../f_www.jiuchangkuaidai.com_admin-2018-10-28-01-07-04.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/1w.21-.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/1w.21-2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/20.be.8000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/22.1200.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/22.200.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/25.10000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/25.10000.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/5000.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/f_web.shzdrzzl.com_admin-2018-11-19-09-06-32.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/send_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ooooo/send_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/zj.1w.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/zj.1w.2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/zj.2w.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooooo/历史余量_www.jiuchangkuaidai.com_admin-2018-10-28-01-07-04.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ooooo/历史余量_www.jiuchangkuaidai.com_admin-2018-10-28-01-07-04.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../send_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../send_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../了了了了/25.400.m.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../了了了了/25.m.处理.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../了了了了/25.m.处理.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../了了了了/send_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../了了了了/send_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../了了了了/余量f_web.shzdrzzl.com_admin-2018-11-23-14-55-04.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/11.5取隔夜余量f_manager.hzkunhang.com-2018-11-05-08-36-49.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/24.10000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/24.10000.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/25.800.s200.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/25.bu.m.500.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/25.gy.1000.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/25.实时处理.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/365应急王_2018-11-19 09_53_20.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/f_www.shuixinhua.com_qudao_channelLogin.html-2018-11-24-12-45-48.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/gy.2228.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/gy.2228.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/send_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/send_data_bak.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/一天5000作量.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/余生已经.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/余量_别人用过实时单f_app.3chuishou.com_hqk888_index.html-2018-11-06-21-55-48.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/余量f_app.3chuishou.com_hqk888_index.html-2018-10-25-00-31-18.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../余生你好/现款现金贷_2018-11-19 21_46_34.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/.idea/信息时代.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/23.4500-未出.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/23.6500.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/25.100.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/25.1200.gy.2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/25.200.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/25.300.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/25.300.gy.2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/25.实时处理.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/25.实时处理.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/gy.2228.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/send_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/发送.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/有名余量-闪电贷_2018-11-22 10_32_55.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/隔夜余量f_app.qianbao665.com_channel_channelLogin.html-2018-11-22-10-08-02.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../信息时代/隔天余量-365应急王_2018-11-19 09_53_20.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../发财树/send_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../发财树/send_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../发财树/余_manager.hzkunhang.com-2018-10-23-08-07-31.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../吹牛N/send_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../宋/f_web.shzdrzzl.com_admin-2018-11-03-09-11-40.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../宋/f_web.shzdrzzl.com_admin-2018-11-03-09-11-40.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../宋/gy.2228-OK.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../宋/gy.2228.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../宋/send_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../宋/send_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../宋/宋-实际发送.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../宋/宋-实际发送.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../秋雨d/23.100.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../秋雨d/23.100.2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../秋雨d/23.200.cl.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../秋雨d/23.300.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../秋雨d/23.300.2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../秋雨d/send_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../秋雨d/shz_web待处理实时.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../秋雨d/shz_web待处理实时_.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../诚信/100.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../诚信/100.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../诚信/25.100.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../诚信/25.200.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../诚信/25.200.2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../诚信/25.200.3.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../诚信/25.300.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../诚信/25.300.2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../诚信/25.实时处理.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../诚信/send_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../诚信/send_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../采集资料.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../采集资料.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../青春/gy.1000.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../青春/gy.1000.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../青春/send_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../青春/send_data.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1539" />
+    <option name="y" value="90" />
+    <option name="width" value="1545" />
+    <option name="height" value="1239" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f7b2567-1e93-4baf-bf1c-f80f7de5bad4" name="Default Changelist" comment="" />
+      <created>1543808140137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543808140137</updated>
+      <workItem from="1543808145078" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1026" y="60" width="1030" height="826" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24924622" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
