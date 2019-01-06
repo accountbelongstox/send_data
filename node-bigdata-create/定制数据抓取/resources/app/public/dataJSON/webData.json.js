@@ -18,40 +18,6 @@ class C{
                     version:"2.0"//软件版本号
 				},
 				supportWebURL:{
-					"luluMoney":{
-						"url":"http://tiexin69223.cn:9191",
-						"dataSource":{
-							"WhiteList":{
-								"description":"白名单用户",
-								"url":"http://tiexin69223.cn:9191/manage/busUser/registUserListDataTable?&draw=2&columns%5B0%5D%5Bdata%5D=id&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=false&columns%5B0%5D%5Borderable%5D=false&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=username&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=realName&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=idcard&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=idcardApprove&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=contactApprove&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=zhimaApprove&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=mnoApprove&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=bankApprove&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=deviceType&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=enabled&columns%5B10%5D%5Bname%5D=&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=true&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=channelName&columns%5B11%5D%5Bname%5D=&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=true&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B12%5D%5Bdata%5D=createdAt&columns%5B12%5D%5Bname%5D=&columns%5B12%5D%5Bsearchable%5D=true&columns%5B12%5D%5Borderable%5D=true&columns%5B12%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B12%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B13%5D%5Bdata%5D=updatedAt&columns%5B13%5D%5Bname%5D=&columns%5B13%5D%5Bsearchable%5D=true&columns%5B13%5D%5Borderable%5D=true&columns%5B13%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B13%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=100000000&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1539432520273"
-							},
-							"Blacklist":{
-								"description":"黑名单",
-								"url":"http://tiexin69223.cn:9191/manage/busUser/defriendUserListDataTable?&draw=2&columns%5B0%5D%5Bdata%5D=id&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=false&columns%5B0%5D%5Borderable%5D=false&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=username&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=realName&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=idcard&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=idcardApprove&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=contactApprove&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=zhimaApprove&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=mnoApprove&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=bankApprove&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=deviceType&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=enabled&columns%5B10%5D%5Bname%5D=&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=true&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=channelName&columns%5B11%5D%5Bname%5D=&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=true&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B12%5D%5Bdata%5D=createdAt&columns%5B12%5D%5Bname%5D=&columns%5B12%5D%5Bsearchable%5D=true&columns%5B12%5D%5Borderable%5D=true&columns%5B12%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B12%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B13%5D%5Bdata%5D=updatedAt&columns%5B13%5D%5Bname%5D=&columns%5B13%5D%5Bsearchable%5D=true&columns%5B13%5D%5Borderable%5D=true&columns%5B13%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B13%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=100000000&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1539432636824"
-							}
-						},
-						isLogin:{//用来判断是否登陆
-							queryText:`id="sidebar-menu"`
-						},
-                        isReadyLogin:{//用来判断是否可以登陆
-                            name:["username","password"],
-                        }
-					},
-                    "pandoracredit":{
-                        "url":"http://console.pandoracredit.cn/login",
-                        "dataSource":{
-                            "alldata":{
-                                "description":"全部数据",
-                                "url":"https://console.pandoracredit.cn/api/organizations/hi/self_data?source_code=<%r%>username<%/r%>&page=1&size=<%r%>length<%/r%>&start_date=<%r%>startTimeA<%/r%>&end_date=<%r%>toDayTimeA<%/r%>"
-                            }
-                        },
-                        isLogin:{//用来判断是否登陆
-                            queryText:`class="user_status"`
-                        },
-                        isReadyLogin:{//用来判断是否可以登陆
-                            class:["user","pass"],
-                        }
-                    },
                     "jiuchangkuaidai":{
                         "url":"http://www.jiuchangkuaidai.com/admin/",
                         "dataSource":{
@@ -158,6 +124,133 @@ class C{
                         },
                         isReadyLogin:{//用来判断是否可以登陆
                             id:["UserName","UserPsd"],
+                        }
+                    },
+                    "shuixinhua":{
+                        "url":"http://www.shuixinhua.com/qudao/channelLogin.html",
+                        "dataSource":{
+                            "allUser": {
+                                "description": "全部用户数据",
+                                "url": (function (){
+                                    let
+                                        allUserLen = 300,
+                                        pageNoLen = 200,
+                                        allUser = []
+                                    ;
+                                    for(let i =10;i<allUserLen;i++){
+                                        for(let j =1;j<pageNoLen;j++){ // http://www.shuixinhua.com/api/channel/findMyMember?phone=&userName=&pageNo=1&pageSize=10&gmtGatetime=channelId=10
+                                            allUser.push(`http://www.shuixinhua.com/api/channel/findMyMember?phone=&userName=&pageNo=${j}&pageSize=1500&gmtGatetime=&channelId=${i}`);
+                                        }
+                                    }
+                                    return allUser;
+                                })()
+                            },
+                            "alldata": {
+                                "description": "当前用户数据",
+                                "url": `http://www.shuixinhua.com/api/channel/findMyMember?phone=&userName=&pageNo=1&pageSize=1000000&gmtGatetime=`
+                            }
+                        },
+                        isLogin:{//用来判断是否登陆
+                            queryText:`退出登陆`//通过读取URL判断是否登陆
+                        },
+                        isReadyLogin:{//用来判断是否可以登陆
+                            id:["userName","password"],
+                        }
+                    },
+                    "qianbao665":{
+                        "url":"http://app.qianbao665.com/channel/channelLogin.html",
+                        "dataSource":{
+                            "allUser": {
+                                "description": "全部用户数据",
+                                "url": (function (){
+                                    let
+                                        allUserLen = 300,
+                                        pageNoLen = 200,
+                                        allUser = []
+                                    ;
+                                    for(let i =10;i<allUserLen;i++){
+                                        for(let j =1;j<pageNoLen;j++){ // http://www.shuixinhua.com/api/channel/findMyMember?phone=&userName=&pageNo=1&pageSize=10&gmtGatetime=channelId=10
+                                            allUser.push(`http://app.qianbao665.com/api/channel/findMyMember?phone=&userName=&pageNo=${j}&pageSize=1500&gmtGatetime=&channelId=${i}`);
+                                        }
+                                    }
+                                    return allUser;
+                                })()
+                            },
+                            "alldata": {
+                                "description": "当前用户数据",
+                                "url": `http://app.qianbao665.com/api/channel/findMyMember?phone=&userName=&pageNo=1&pageSize=1000000&gmtGatetime=`
+                            }
+                        },
+                        isLogin:{//用来判断是否登陆
+                            queryText:`退出登陆`//通过读取URL判断是否登陆
+                        },
+                        isReadyLogin:{//用来判断是否可以登陆
+                            id:["userName","password"],
+                        }
+                    },
+                    "chuishou":{
+                        "url":"http://app.3chuishou.com/hqk888/index.html",
+                        "dataSource":{
+                            "allUser": {
+                                "description": "全部用户数据",
+                                "url": (function (){
+                                    let
+                                        allUserLen = 1000,
+                                        pageNoLen = 200,
+                                        allUser = []
+                                    ;
+                                    for(let i =10;i<allUserLen;i++){
+                                        for(let j =1;j<pageNoLen;j++){
+                                            allUser.push(`http://app.3chuishou.com/api/channel/findMyMember?phone=&userName=&pageNo=${j}&pageSize=1500&channelId=${i}`);
+                                        }
+                                    }
+                                    return allUser;
+                                })()
+                            },
+                            "alldata": {
+                                "description": "当前用户数据",
+                                "url": `http://app.3chuishou.com/api/channel/findMyMember?phone=&userName=&pageNo=1&pageSize=1000000`
+                            }
+                        },
+                        isLogin:{//用来判断是否登陆
+                            queryText:`退出登陆`//通过读取URL判断是否登陆
+                        },
+                        isReadyLogin:{//用来判断是否可以登陆
+                            id:["userName","password"],
+                        }
+                    },
+                    "luluMoney":{
+                        "url":"http://tiexin69223.cn:9191",
+                        "dataSource":{
+                            "WhiteList":{
+                                "description":"白名单用户",
+                                "url":"http://tiexin69223.cn:9191/manage/busUser/registUserListDataTable?&draw=2&columns%5B0%5D%5Bdata%5D=id&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=false&columns%5B0%5D%5Borderable%5D=false&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=username&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=realName&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=idcard&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=idcardApprove&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=contactApprove&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=zhimaApprove&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=mnoApprove&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=bankApprove&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=deviceType&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=enabled&columns%5B10%5D%5Bname%5D=&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=true&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=channelName&columns%5B11%5D%5Bname%5D=&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=true&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B12%5D%5Bdata%5D=createdAt&columns%5B12%5D%5Bname%5D=&columns%5B12%5D%5Bsearchable%5D=true&columns%5B12%5D%5Borderable%5D=true&columns%5B12%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B12%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B13%5D%5Bdata%5D=updatedAt&columns%5B13%5D%5Bname%5D=&columns%5B13%5D%5Bsearchable%5D=true&columns%5B13%5D%5Borderable%5D=true&columns%5B13%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B13%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=100000000&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1539432520273"
+                            },
+                            "Blacklist":{
+                                "description":"黑名单",
+                                "url":"http://tiexin69223.cn:9191/manage/busUser/defriendUserListDataTable?&draw=2&columns%5B0%5D%5Bdata%5D=id&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=false&columns%5B0%5D%5Borderable%5D=false&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=username&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=true&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=realName&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=idcard&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=idcardApprove&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=contactApprove&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=zhimaApprove&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=mnoApprove&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=bankApprove&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=deviceType&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=enabled&columns%5B10%5D%5Bname%5D=&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=true&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=channelName&columns%5B11%5D%5Bname%5D=&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=true&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B12%5D%5Bdata%5D=createdAt&columns%5B12%5D%5Bname%5D=&columns%5B12%5D%5Bsearchable%5D=true&columns%5B12%5D%5Borderable%5D=true&columns%5B12%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B12%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B13%5D%5Bdata%5D=updatedAt&columns%5B13%5D%5Bname%5D=&columns%5B13%5D%5Bsearchable%5D=true&columns%5B13%5D%5Borderable%5D=true&columns%5B13%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B13%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=asc&start=0&length=100000000&search%5Bvalue%5D=&search%5Bregex%5D=false&_=1539432636824"
+                            }
+                        },
+                        isLogin:{//用来判断是否登陆
+                            queryText:`id="sidebar-menu"`
+                        },
+                        isReadyLogin:{//用来判断是否可以登陆
+                            name:["username","password"],
+                        }
+                    },
+                    "pandoracredit":{
+                        "url":"http://console.pandoracredit.cn/login",
+                        "dataSource":{
+                            "alldata":{
+                                "description":"全部数据",
+                                "url":"https://console.pandoracredit.cn/api/organizations/hi/self_data?source_code=<%r%>username<%/r%>&page=1&size=<%r%>length<%/r%>&start_date=<%r%>startTimeA<%/r%>&end_date=<%r%>toDayTimeA<%/r%>"
+                            }
+                        },
+                        isLogin:{//用来判断是否登陆
+                            queryText:`class="user_status"`
+                        },
+                        isReadyLogin:{//用来判断是否可以登陆
+                            class:["user","pass"],
                         }
                     },
                     "hzkunhang":{
@@ -421,37 +514,6 @@ class C{
                             "alldata": {
                                 "description": "当前用户数据",
                                 "url": `http://app.guoji1818.com//api/channel/findMyMember?pageNo=1&pageSize=1000000`
-                            }
-                        },
-                        isLogin:{//用来判断是否登陆
-                            queryText:`退出登陆`//通过读取URL判断是否登陆
-                        },
-                        isReadyLogin:{//用来判断是否可以登陆
-                            id:["userName","password"],
-                        }
-                    },
-                    "chuishou":{
-                        "url":"http://app.3chuishou.com/hqk888/index.html",
-                        "dataSource":{
-                            "allUser": {
-                                "description": "全部用户数据",
-                                "url": (function (){
-                                    let
-                                        allUserLen = 1000,
-                                        pageNoLen = 200,
-                                        allUser = []
-                                    ;
-                                    for(let i =10;i<allUserLen;i++){
-                                        for(let j =1;j<pageNoLen;j++){
-                                            allUser.push(`http://app.3chuishou.com/api/channel/findMyMember?phone=&userName=&pageNo=${j}&pageSize=1500&channelId=${i}`);
-                                        }
-                                    }
-                                    return allUser;
-                                })()
-                            },
-                            "alldata": {
-                                "description": "当前用户数据",
-                                "url": `http://app.3chuishou.com/api/channel/findMyMember?phone=&userName=&pageNo=1&pageSize=1000000`
                             }
                         },
                         isLogin:{//用来判断是否登陆

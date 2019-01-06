@@ -56,7 +56,7 @@ class CC{
         dataResult.toDayList = [];//今日数据
         console.log(`list.length -> ${list.length}`);
         //保存为csv文件
-        that.load.module.csv.initAdd(`姓名,手机号,申请时间`);
+        //that.load.module.csv.initAdd(`姓名,手机号,申请时间`);
 
         for(let p in list){
             let
@@ -68,7 +68,7 @@ class CC{
                 createdAt = item.registDate,
                 createAtTimestamp = that.load.module.tools.timeFormat(false,createdAt)
             ;
-            that.load.module.csv.addOne(TrueName,Mobile,createdAt);
+            that.load.module.csv.addOne(TrueName,Mobile,`-`,`-`,`-`,createdAt);
 
             if(createAtTimestamp > this.toDayTimestamp){
                 dataResult.toDayCount++;
@@ -90,7 +90,7 @@ class CC{
         dataResult.toDayList = [];//今日数据
 
         //保存为csv文件
-        that.load.module.csv.initAdd(`姓名,电话,身份证号,申请时间,更新时间`);
+        //that.load.module.csv.initAdd(`姓名,电话,身份证号,申请时间,更新时间`);
 
         for(let p in list){
             let
@@ -102,7 +102,7 @@ class CC{
                 createdAt = that.load.module.tools.timeFormat(null,createAtTimestamp),
                 updatedAt = that.load.module.tools.timeFormat(null,item.updatedAt/1000)
             ;
-            that.load.module.csv.addOne(name,phone,idcard,createdAt,updatedAt);
+            that.load.module.csv.addOne(name,phone,idcard,`-`,`-`,updatedAt);
             if(createAtTimestamp > this.toDayTimestamp){
                 dataResult.toDayCount++;
                 dataResult.toDayList.push(item);
@@ -110,6 +110,130 @@ class CC{
         }
         return dataResult;
     }
+
+
+
+    qianbao665(SourceData){
+        let
+            data = SourceData.data
+        ;
+
+        let
+            that = this,
+            dataResult = {},
+            list = (function (){
+                let
+                    dataItemName = "list"
+                ;
+                if(data && (dataItemName in data) ){
+                    return data[dataItemName];
+                }
+                return [];
+            })()
+        ;
+        if(!data){
+            dataResult.nextSkip = 20000;
+            console.log(`skip -> 20000`);
+        }
+
+        dataResult.count = SourceData.total ? SourceData.total : 0;//总条数
+        dataResult.source = list;//源数据
+        dataResult.toDayCount = 0;//今日统计
+        dataResult.toDayList = [];//今日数据
+        console.log(`list.length -> ${list.length}`);
+        let
+            pageNum = (data && ("pageNum" in data) && data.pageNum) ? data.pageNum : 1
+        ;
+        if(!list.length){
+            dataResult.nextSkip = (199 - pageNum);
+            console.log(`skip -> ${pageNum}`);
+        }
+        //保存为csv文件
+        //that.load.module.csv.initAdd(`姓名,手机号,认证状态,密码,申请时间`);
+
+        for(let p in list){
+            let
+                item = list[p],
+                TrueName = that.load.module.tools.get(item.realName,`-`),
+                Mobile = that.load.module.tools.get(item.phone,`-`),
+                authStatus = that.load.module.tools.get(item.authStatus,`-`),
+                password = that.load.module.tools.get(item.password,`-`),
+                gmtDatetime = parseInt(item.gmtDatetime) / 1000,
+                createdAt = that.load.module.tools.timeFormat(null,gmtDatetime),
+                createAtTimestamp = that.load.module.tools.timeFormat(false,gmtDatetime)
+            ;
+            //that.load.module.csv.addOne(TrueName,Mobile,authStatus,password,createdAt);
+            that.load.module.csv.addOne(TrueName,Mobile,`-`,`-`,`-`,createdAt);
+
+            if(createAtTimestamp > this.toDayTimestamp){
+                dataResult.toDayCount++;
+                dataResult.toDayList.push(item);
+            }
+        }
+        return dataResult;
+    }
+
+
+    shuixinhua(SourceData){
+        let
+            data = SourceData.data
+        ;
+
+        let
+            that = this,
+            dataResult = {},
+            list = (function (){
+                let
+                    dataItemName = "list"
+                ;
+                if(data && (dataItemName in data) ){
+                    return data[dataItemName];
+                }
+                return [];
+            })()
+        ;
+        if(!data){
+            dataResult.nextSkip = 20000;
+            console.log(`skip -> 20000`);
+        }
+
+        dataResult.count = SourceData.total ? SourceData.total : 0;//总条数
+        dataResult.source = list;//源数据
+        dataResult.toDayCount = 0;//今日统计
+        dataResult.toDayList = [];//今日数据
+        console.log(`list.length -> ${list.length}`);
+        let
+            pageNum = (data && ("pageNum" in data) && data.pageNum) ? data.pageNum : 1
+        ;
+        if(!list.length){
+            dataResult.nextSkip = (199 - pageNum);
+            console.log(`skip -> ${pageNum}`);
+        }
+        //保存为csv文件
+        //that.load.module.csv.initAdd(`姓名,手机号,认证状态,密码,申请时间`);
+
+        for(let p in list){
+            let
+                item = list[p],
+                TrueName = that.load.module.tools.get(item.realName,`-`),
+                Mobile = that.load.module.tools.get(item.phone,`-`),
+                authStatus = that.load.module.tools.get(item.authStatus,`-`),
+                password = that.load.module.tools.get(item.password,`-`),
+                gmtDatetime = parseInt(item.gmtDatetime) / 1000,
+                createdAt = that.load.module.tools.timeFormat(null,gmtDatetime),
+                createAtTimestamp = that.load.module.tools.timeFormat(false,gmtDatetime)
+            ;
+            //that.load.module.csv.addOne(TrueName,Mobile,authStatus,password,createdAt);
+            that.load.module.csv.addOne(TrueName,Mobile,`-`,`-`,`-`,createdAt);
+
+            if(createAtTimestamp > this.toDayTimestamp){
+                dataResult.toDayCount++;
+                dataResult.toDayList.push(item);
+            }
+        }
+        return dataResult;
+    }
+
 
 
     chuishou(SourceData){
@@ -148,7 +272,7 @@ class CC{
             console.log(`skip -> ${pageNum}`);
         }
         //保存为csv文件
-        that.load.module.csv.initAdd(`姓名,手机号,认证状态,密码,申请时间`);
+        //that.load.module.csv.initAdd(`姓名,手机号,认证状态,密码,申请时间`);
 
         for(let p in list){
             let
@@ -161,7 +285,9 @@ class CC{
                 createdAt = that.load.module.tools.timeFormat(null,gmtDatetime),
                 createAtTimestamp = that.load.module.tools.timeFormat(false,gmtDatetime)
             ;
-            that.load.module.csv.addOne(TrueName,Mobile,authStatus,password,createdAt);
+
+            //that.load.module.csv.addOne(TrueName,Mobile,authStatus,password,createdAt);
+            that.load.module.csv.addOne(TrueName,Mobile,`-`,`-`,`-`,createdAt);
 
             if(createAtTimestamp > this.toDayTimestamp){
                 dataResult.toDayCount++;
@@ -202,7 +328,7 @@ class CC{
             console.log(`skip -> ${pageNum}`);
         }
         //保存为csv文件
-        that.load.module.csv.initAdd(`姓名,手机号,申请时间,更新时间`);
+        //that.load.module.csv.initAdd(`姓名,手机号,申请时间,更新时间`);
 
         for(let p in list){
             let
@@ -213,7 +339,8 @@ class CC{
                 createdAt = item.uptDatetime,
                 createAtTimestamp = that.load.module.tools.timeFormat(false,createdAt)
             ;
-            that.load.module.csv.addOne(TrueName,Mobile,gmtDatetime,createdAt);
+            //that.load.module.csv.addOne(TrueName,Mobile,gmtDatetime,createdAt);
+            that.load.module.csv.addOne(TrueName,Mobile,`-`,`-`,`-`,createdAt);
 
             if(createAtTimestamp > this.toDayTimestamp){
                 dataResult.toDayCount++;
@@ -243,7 +370,7 @@ class CC{
         dataResult.toDayList = [];//今日数据
 
         //保存为csv文件
-        that.load.module.csv.initAdd(`姓名,手机号,身份证号,渠道来源,申请时间`);
+        //that.load.module.csv.initAdd(`姓名,手机号,身份证号,渠道来源,申请时间`);
 
         for(let p in list){
             let
@@ -282,7 +409,8 @@ class CC{
                 createdAt = that.load.module.tools.timeFormat(`yyyy-mm-dd`,createAtTimestamp)//,
                 //updatedAt = that.load.module.tools.timeFormat(null,parseInt(updateAtTimestamp)/1000)
             ;
-            that.load.module.csv.addOne(TrueName,Mobile,idCard,channelName,createdAt);
+            //that.load.module.csv.addOne(TrueName,Mobile,idCard,channelName,createdAt);
+            that.load.module.csv.addOne(TrueName,Mobile,idCard,`-`,`-`,createdAt);
 
             if(createAtTimestamp > this.toDayTimestamp){
                 dataResult.toDayCount++;
@@ -361,7 +489,9 @@ class CC{
         return dataResult;
     }
 
-    jiuchangkuaidai(data){
+    //shzdrzzl
+
+    shzdrzzl(data){
         let
             that = this,
             dataResult = {},
@@ -386,7 +516,7 @@ class CC{
         }
 
         //保存为csv文件
-        that.load.module.csv.initAdd(`姓名,电话,身份证号,工作地址,家庭地址,是否VIP,授信额度,性别,申请时间,更新时间`);
+        //that.load.module.csv.initAdd(`姓名,电话,身份证号,工作地址,家庭地址,申请时间`);
 
         for(let p in list){
             let
@@ -425,7 +555,80 @@ class CC{
                 createdAt = that.load.module.tools.timeFormat(null,parseInt(createAtTimestamp)/1000),
                 updatedAt = that.load.module.tools.timeFormat(null,parseInt(updateAtTimestamp)/1000)
             ;
-            that.load.module.csv.addOne(TrueName,Mobile,CardNo,GZShowAddress,JTShowAddress,IsVIP,SXMoney,Sex,createdAt,updatedAt);
+            that.load.module.csv.addOne(TrueName,Mobile,CardNo,GZShowAddress,JTShowAddress,updatedAt);
+
+            if(createAtTimestamp > this.toDayTimestamp){
+                dataResult.toDayCount++;
+                dataResult.toDayList.push(item);
+            }
+        }
+        return dataResult;
+    }
+
+    jiuchangkuaidai(data){
+        let
+            that = this,
+            dataResult = {},
+            list = (function (){
+                let
+                    dataItemName = "rows"
+                ;
+                if(dataItemName in data){
+                    return data[dataItemName];
+                }
+                return [];
+            })()
+        ;
+        dataResult.count = data.total;//总条数
+        dataResult.source = list;//源数据
+        dataResult.toDayCount = 0;//今日统计
+        dataResult.toDayList = [];//今日数据
+
+        if(!list.length){
+            dataResult.nextSkip = 20000;
+            console.log(`skip -> 20000`);
+        }
+
+        //保存为csv文件
+
+        for(let p in list){
+            let
+                item = list[p],
+                TrueName = that.load.module.tools.get(item.TrueName,`-`),
+                Mobile = that.load.module.tools.get(item.Mobile,`-`),
+                CardNo = that.load.module.tools.get(item.CardNo,`-`),
+                GZShowAddress = that.load.module.tools.get(item.GZShowAddress,`-`),
+                JTShowAddress = that.load.module.tools.get(item.JTShowAddress,`-`),
+                IsVIP = (function (){
+                    if(!that.load.module.tools.get(item.IsVIP)){
+                        return "是";
+                    }else{
+                        return "否";
+                    }
+                })(),
+                SXMoney = that.load.module.tools.get(item.SXMoney,`0`),
+                Sex = (function (){
+                    let
+                        sex =  that.load.module.tools.get(item.Sex)
+                    ;
+                    if(sex ===0){
+                        return "保密";
+                    }else if(sex === 1){
+                        return "男";
+                    }else{
+                        return "女";
+                    }
+                })(),
+                /*              idcard = that.load.module.tools.get(item.CardNo,`-`),
+                              name = that.load.module.tools.get(item.TrueName,`-`),
+                              phone = that.load.module.tools.get(item.Mobile,`-`),
+                              idcard = that.load.module.tools.get(item.CardNo,`-`),*/
+                createAtTimestamp = item.RegDate.replace(/[\/A-Za-z\(\)]+/ig,``),
+                updateAtTimestamp = item.LastLoginDate.replace(/[\/A-Za-z\(\)]+/ig,``),
+                createdAt = that.load.module.tools.timeFormat(null,parseInt(createAtTimestamp)/1000),
+                updatedAt = that.load.module.tools.timeFormat(null,parseInt(updateAtTimestamp)/1000)
+            ;
+            that.load.module.csv.addOne(TrueName,Mobile,CardNo,GZShowAddress,JTShowAddress,updatedAt);
 
             if(createAtTimestamp > this.toDayTimestamp){
                 dataResult.toDayCount++;
@@ -455,7 +658,7 @@ class CC{
         dataResult.toDayList = [];//今日数据
 
 		//保存为csv文件
-		that.load.module.csv.initAdd(`姓名,电话,身份证号,申请时间,更新时间`);
+		//that.load.module.csv.initAdd(`姓名,电话,身份证号,申请时间,更新时间`);
 
 		for(let p in list){
 			let
@@ -467,7 +670,8 @@ class CC{
 				createdAt = that.load.module.tools.timeFormat(null,createAtTimestamp),
 				updatedAt = that.load.module.tools.timeFormat(null,item.updatedAt/1000)
 			;
-			that.load.module.csv.addOne(name,phone,idcard,createdAt,updatedAt);
+            //that.load.module.csv.addOne(name,phone,idcard,createdAt,updatedAt);
+            that.load.module.csv.addOne(name,phone,idcard,`-`,`-`,updatedAt);
 			if(createAtTimestamp > this.toDayTimestamp){
                 dataResult.toDayCount++;
                 dataResult.toDayList.push(item);
@@ -488,7 +692,7 @@ class CC{
         dataResult.toDayCount = 0;//今日统计
         dataResult.toDayList = [];//今日数据
         //保存为csv文件
-        that.load.module.csv.initAdd(`电话,申请时间`);
+        //that.load.module.csv.initAdd(`电话,申请时间`);
         for(let p in list){
             let
                 item = list[p],
@@ -496,7 +700,9 @@ class CC{
                 createdAt = item.create_time,
                 createAtTimestamp = that.load.module.tools.timeFormat(false,createdAt)
 			;
-            that.load.module.csv.addOne(phone,createdAt);
+            //that.load.module.csv.addOne(phone,createdAt);
+            that.load.module.csv.addOne(`-`,phone,`-`,`-`,`-`,createdAt);
+
             if(createAtTimestamp > this.toDayTimestamp){
                 dataResult.toDayCount++;
                 dataResult.toDayList.push(item);
