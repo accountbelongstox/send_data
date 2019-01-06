@@ -109,27 +109,6 @@ class C{
                     "shzdrzzl":{
                         "url":"http://weba.shzdrzzl.com/admin/",
                         "dataSource":{
-                            "aldata_scope":{
-                                "description":"一年内数据",
-                                "url":"http://weba.shzdrzzl.com/admin/member/DataList",
-                                post:true,
-                                data:(function (){
-                                    let
-                                        getRows = 300,
-                                        dataLen = parseInt(70000/getRows),
-                                        data = []
-                                    ;
-                                    for(let i = 1;i <= dataLen+1;i++){
-                                        data.push({
-                                            AddDateTime1:`<%r%>startTimeA<%/r%>`,
-                                            AddDateTime2:`<%r%>toDayTimeA<%/r%>`,
-                                            page: i,
-                                            rows: getRows
-                                        });
-                                    }
-                                    return data;
-                                })()
-                            },
                             "aldata_today":{
                                 "description": "今日数据",
                                 "url": "http://weba.shzdrzzl.com/admin/member/DataList",
@@ -139,7 +118,7 @@ class C{
                                         data = [],
                                         days = [`toDayTimeA`,`toDayTimeA`]
                                     ;
-                                    for(let i = 1;i<10;i++){
+                                    for(let i = 1;i<20;i++){
                                         data.push(
                                             {
                                                 AddDateTime1: `<%r%>toDayTimeA<%/r%>`,
@@ -148,6 +127,27 @@ class C{
                                                 rows: 300
                                             }
                                         )
+                                    }
+                                    return data;
+                                })()
+                            },
+                            "aldata_scope":{
+                                "description":"一年内数据",
+                                "url":"http://weba.shzdrzzl.com/admin/member/DataList",
+                                post:true,
+                                data:(function (){
+                                    let
+                                        getRows = 300,
+                                        dataLen = parseInt(100000/getRows),
+                                        data = []
+                                    ;
+                                    for(let i = 1;i <= dataLen+1;i++){
+                                        data.push({
+                                            AddDateTime1:`<%r%>startTimeA<%/r%>`,
+                                            AddDateTime2:`<%r%>toDayTimeA<%/r%>`,
+                                            page: i,
+                                            rows: getRows
+                                        });
                                     }
                                     return data;
                                 })()
