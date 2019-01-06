@@ -107,11 +107,11 @@ class C{
                         }
                     },
                     "shzdrzzl":{
-                        "url":"http://web.shzdrzzl.com/admin/",
+                        "url":"http://weba.shzdrzzl.com/admin/",
                         "dataSource":{
                             "aldata_scope":{
                                 "description":"一年内数据",
-                                "url":"http://web.shzdrzzl.com/admin/member/DataList",
+                                "url":"http://weba.shzdrzzl.com/admin/member/DataList",
                                 post:true,
                                 data:(function (){
                                     let
@@ -132,7 +132,7 @@ class C{
                             },
                             "aldata_today":{
                                 "description": "今日数据",
-                                "url": "http://web.shzdrzzl.com/admin/member/DataList",
+                                "url": "http://weba.shzdrzzl.com/admin/member/DataList",
                                 post: true,
                                 data: (function (){
                                     let
