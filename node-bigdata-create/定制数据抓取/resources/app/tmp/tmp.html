@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="renderer" content="webkit">
+
+		<title>换钱快后台主页</title>
+
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+
+		<!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+		<link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/style.css?v=4.1.0" rel="stylesheet">
+		<!--alert css-->
+		<link rel="stylesheet" type="text/css" href="css/sweetalert.css" />
+		<!-- 全局js -->
+		<script src="js/jquery.min.js?v=2.1.4"></script>
+		<script src="js/bootstrap.min.js?v=3.3.6"></script>
+		<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+		<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="js/plugins/layer/layer.min.js"></script>
+		<!--alert提示款-->
+		<script type="text/javascript" src="js/sweetalert.min.js"></script>
+		<!-- 自定义js -->
+		<script src="js/hAdmin.js?v=4.1.0"></script>
+		<script src="js/core.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+
+	<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+		<div id="wrapper">
+			<!--左侧导航开始-->
+			<nav class="navbar-default navbar-static-side" role="navigation">
+				<div class="nav-close"><i class="fa fa-times-circle"></i>
+				</div>
+				<div class="sidebar-collapse">
+					<ul class="nav" id="side-menu">
+						<li class="nav-header">
+							<div class="dropdown profile-element">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									<span class="clear">
+                                    <span class="block m-t-xs" style="font-size:20px;">
+                                        <i class="fa fa-area-chart"></i>
+                                        <strong class="font-bold">后台管理系统</strong>
+                                    </span>
+									</span>
+								</a>
+							</div>
+						</li>
+						<li class="nav-header">
+							<div class="col-md-8 text-center" id="admin_img_user_name">
+							</div>
+						</li>
+
+						<li id="menu_1" style="display:none;">
+							<a href="">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">系统设置</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_2">协议模板</a>
+								</li>
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_3">参数设置</a>
+								</li>
+								<li name="收款设置">
+									<a class="J_menuItem" href="config2.html" id="menu">收款设置</a>
+								</li>
+
+							</ul>
+						</li>
+						<li id="menu_4" style="display:none;">
+							<a href="">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">权限管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_5">角色列表</a>
+								</li>
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_6">管理员列表</a>
+								</li>
+							</ul>
+						</li>
+						<li id="menu_7" style="display:none;">
+							<a href="">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">会员管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none ;" name="会员列表">
+									<a class="J_menuItem" href="" id="menu_8">会员列表</a>
+								</li>
+								<!--<li style="display:none ;" name="会员列表">
+                                 <a class="J_menuItem" href="blackList.html" id="menu_87">黑名单列表</a>
+                            </li>-->
+							</ul>
+						</li>
+
+						<li id="menu_9" style="display:none; ">
+							<a>
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">信审管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li name="基本信息认证" style="display:none">
+									<a class="J_menuItem" href="" id="menu_10">联系人认证</a>
+								</li>
+								<li name="身份认证" style="display:none">
+									<a class="J_menuItem" href="" id="menu_11">身份认证</a>
+								</li>
+								<li name="手机认证" style="display:none">
+									<a class="J_menuItem" href="" id="menu_12">手机认证</a>
+								</li>
+								<li name="银行卡认证" style="display:none">
+									<a class="J_menuItem" href="" id="menu_13">银行卡认证</a>
+								</li>
+								<li style="display:none">
+									<a class="J_menuItem" href="" id="menu_44">淘宝认证</a>
+								</li>
+							</ul>
+						</li>
+
+						
+
+						<li id="menu_17" style="display:none;">
+							<a>
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">评估报告管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_18">审核列表</a>
+								</li>
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_48">打款列表</a>
+								</li>
+							</ul>
+						</li>
+
+						<li id="menu_19" style="display:none;">
+							<a href="#">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">订单管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_20">订单列表</a>
+								</li>
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_37">催收订单列表</a>
+								</li>
+							</ul>
+						</li>
+						<li id="menu_21" name="数据统计" style="display:none;">
+							<a href="">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">数据统计</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none;">
+									<a class="J_menuItem" href="index_v1.html" id="menu_22">统计报表</a>
+								</li>
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_38">财务日报表</a>
+								</li>
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_41">还款明细表</a>
+								</li>
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_39">审核统计</a>
+								</li>
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_40">放款统计</a>
+								</li>
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_42">渠道商报表</a>
+								</li>
+							</ul>
+						</li>
+						<li id="menu_23" name="帮助中心" style="display:none;">
+							<a href="">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">帮助中心</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none ;">
+									<a class="J_menuItem" href="" id="menu_24">帮助中心列表</a>
+								</li>
+							</ul>
+						</li>
+						<!--<li id="menu_25" name="优惠券管理" style="display:none;">
+							<a href="">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">优惠券管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none ;">
+									<a class="J_menuItem" href="coupon_list.html" id="menu_26">优惠券设置</a>
+								</li>
+								<li  name="优惠券人员管理" style="display: ;">
+                                <a class="J_menuItem" href="" id="menu_52">优惠券人员管理</a>
+                           </li>
+							</ul>
+						</li>-->
+						<!--<li id="menu_27" name="广告管理" style="display:none;">
+							<a href="">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">广告管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none ;">
+									<a class="J_menuItem" href="each_picture_list.html" id="menu_28">发布与管理</a>
+								</li>
+							</ul>
+						</li>-->
+
+						<li id="menu_29" name="基本信息" style="display:none;">
+							<a>
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">基本信息</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none;">
+									<a class="J_menuItem" href="punsh_msg_list.html" id="menu_30">极光推送</a>
+								</li>
+
+								<li style="display:none ;">
+									<a class="J_menuItem" href="appfeedback_list.html" id="menu_31">用户反馈信息</a>
+								</li>
+							</ul>
+						</li>
+						<li id="menu_14" style="display:none;">
+							<a href="">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">商品管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_15">手机品牌列表</a>
+								</li>
+								<li style="display:none;">
+									<a class="J_menuItem" href="" id="menu_16">手机型号列表</a>
+								</li>
+							</ul>
+						</li>
+
+						<li id="menu_32" name="渠道商管理" style="display:none;">
+							<a href="">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">渠道商管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level">
+								<li style="display:none;">
+									<a class="J_menuItem" href="channel_list.html" id="menu_33">渠道商列表</a>
+								</li>
+								<!--<li style="display:none;">
+									<a class="J_menuItem" href="withdraw_list.html" id="menu_74">提现列表</a>
+								</li>-->
+								<li>
+							</ul>
+							</li>
+							<li id="menu_35" style="display:none;">
+								<a>
+									<i class="fa fa-edit"></i>
+									<span class="nav-label">云合同管理</span>
+									<span class="fa arrow"></span>
+								</a>
+								<ul class="nav nav-second-level">
+									<li style="display:none;">
+										<a class="J_menuItem" href="" id="menu_36">合同列表</a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu_86" style="display:none;">
+								<a href="">
+									<i class="fa fa-edit"></i>
+									<span class="nav-label">黑名单库</span>
+								</a>
+								<ul class="nav nav-second-level">
+									<li style="display:none ;">
+										<a class="J_menuItem" href="blackList.html" id="menu_87">黑名单列表</a>
+									</li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+			</nav>
+			<!--左侧导航结束-->
+			<!--右侧部分开始-->
+			<div id="page-wrapper" class="gray-bg dashbard-1">
+				<div class="row border-bottom">
+					<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+						<div class="navbar-header">
+							<a class="navbar-minimalize minimalize-styl-2 btn btn-info " href="#"><i class="fa fa-bars"></i> </a>
+						</div>
+						<ul class="nav navbar-top-links navbar-right">
+							<li class="dropdown">
+								<h3><a href="javascript:;" onclick="loginout()">退出登陆</a></h3>
+							</li>
+						</ul>
+						<ul class="nav navbar-top-links navbar-right">
+							<li class="dropdown">
+								<h3> 欢迎&nbsp;&nbsp;&nbsp;<span id="nick_"></span></a></h3>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="row J_mainContent" id="content-main">
+					<iframe id="J_iframe" width="100%" height="100%" src="index_v1.html" frameborder="0" data-id="index_v1.html" seamless></iframe>
+				</div>
+			</div>
+			<!--右侧部分结束-->
+		</div>
+
+		<!-- 修改个人信息-弹窗 -->
+		<div class="modal inmodal" id="updatePassword" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content animated bounceInRight">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">关闭</span>
+                    </button>
+						<h4 class="modal-title" id="this_title">修改个人信息</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<input id="adminId" type="text">
+							<label>旧密码</label>
+							<input id="oldPassword" type="password" placeholder="请输入旧密码" class="form-control">
+							<label>新密码</label>
+							<input id="password" type="password" placeholder="请输入新密码" class="form-control">
+							<label>确认密码</label>
+							<input id="aginPassword" type="password" placeholder="请再次输入密码" class="form-control">
+							<label>账号</label>
+							<input id="userName" type="text" placeholder="请输入新账号" class="form-control">
+							<label>昵称</label>
+							<input id="nick" type="text" placeholder="请输入新昵称" class="form-control">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" onclick="toUpdatePassword()">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
