@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88d65ea6-458b-4870-8fbb-8107b5c9d70a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/get_data.js" afterDir="false" />
     </list>
@@ -19,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get_data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="140" column="38" selection-start-line="140" selection-start-column="38" selection-end-line="140" selection-end-column="38" />
+            <state relative-caret-position="289">
+              <caret line="656" column="18" lean-forward="true" selection-start-line="656" selection-start-column="18" selection-end-line="656" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -48,10 +49,13 @@
       </list>
     </option>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/定制数据抓取/resources/app/package.json" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1225" />
-    <option name="y" value="93" />
-    <option name="width" value="2080" />
+    <option name="x" value="1261" />
+    <option name="y" value="112" />
+    <option name="width" value="1548" />
     <option name="height" value="1302" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -104,19 +108,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546702975169</updated>
-      <workItem from="1546702976835" duration="13526000" />
+      <workItem from="1546702976835" duration="17357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13526000" />
+    <option name="totallyTimeSpent" value="17357000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1225" y="93" width="2080" height="1302" extended-state="1" />
+    <frame x="1261" y="112" width="1548" height="1302" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.251714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16953643" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
@@ -140,8 +144,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/get_data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="140" column="38" selection-start-line="140" selection-start-column="38" selection-end-line="140" selection-end-column="38" />
+        <state relative-caret-position="289">
+          <caret line="656" column="18" lean-forward="true" selection-start-line="656" selection-start-column="18" selection-end-line="656" selection-end-column="18" />
         </state>
       </provider>
     </entry>

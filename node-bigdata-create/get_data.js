@@ -151,12 +151,13 @@ class getBigData{
         if(!exists_bigData){
             //如果不存在大数据,则生成
             that.createBigData(()=>{
+                //生成后重新开始
                 that.run();
             });
         }else{
             //存在时,根据用户设置数据读取
             that.readBigData(()=>{
-                console.log(`ok`);
+
             });
         }
     }
@@ -166,6 +167,8 @@ class getBigData{
         let
             that = this
         ;
+        //计算每个省份要读取的百分比
+
         console.log(read_len);
     }
 

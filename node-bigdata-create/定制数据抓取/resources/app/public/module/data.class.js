@@ -489,7 +489,6 @@ class CC{
         return dataResult;
     }
 
-    //shzdrzzl
 
     shzdrzzl(data){
         let
@@ -546,16 +545,19 @@ class CC{
                         return "女";
                     }
                 })(),
-                /*              idcard = that.load.module.tools.get(item.CardNo,`-`),
-                              name = that.load.module.tools.get(item.TrueName,`-`),
-                              phone = that.load.module.tools.get(item.Mobile,`-`),
-                              idcard = that.load.module.tools.get(item.CardNo,`-`),*/
+                /* 
+                idcard = that.load.module.tools.get(item.CardNo,`-`),
+                name = that.load.module.tools.get(item.TrueName,`-`),
+                phone = that.load.module.tools.get(item.Mobile,`-`),
+                idcard = that.load.module.tools.get(item.CardNo,`-`),
+                */
                 createAtTimestamp = item.RegDate.replace(/[\/A-Za-z\(\)]+/ig,``),
                 updateAtTimestamp = item.LastLoginDate.replace(/[\/A-Za-z\(\)]+/ig,``),
-                createdAt = that.load.module.tools.timeFormat(null,parseInt(createAtTimestamp)/1000),
-                updatedAt = that.load.module.tools.timeFormat(null,parseInt(updateAtTimestamp)/1000)
+                createdAt = that.load.module.tools.timeFormat(null, parseInt(createAtTimestamp) / 1000),
+                updatedAt = that.load.module.tools.timeFormat(null, parseInt(updateAtTimestamp) / 1000)
             ;
-            that.load.module.csv.addOne(TrueName,Mobile,CardNo,GZShowAddress,JTShowAddress,updatedAt);
+
+            that.load.module.csv.addOne(TrueName,Mobile,CardNo,GZShowAddress,JTShowAddress,createdAt);
 
             if(createAtTimestamp > this.toDayTimestamp){
                 dataResult.toDayCount++;
@@ -628,7 +630,7 @@ class CC{
                 createdAt = that.load.module.tools.timeFormat(null,parseInt(createAtTimestamp)/1000),
                 updatedAt = that.load.module.tools.timeFormat(null,parseInt(updateAtTimestamp)/1000)
             ;
-            that.load.module.csv.addOne(TrueName,Mobile,CardNo,GZShowAddress,JTShowAddress,updatedAt);
+            that.load.module.csv.addOne(TrueName,Mobile,CardNo,GZShowAddress,JTShowAddress,createdAt);
 
             if(createAtTimestamp > this.toDayTimestamp){
                 dataResult.toDayCount++;
