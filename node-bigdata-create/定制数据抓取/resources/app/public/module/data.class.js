@@ -567,6 +567,8 @@ class CC{
         return dataResult;
     }
 
+    //test
+
     jiuchangkuaidai(data){
         let
             that = this,
