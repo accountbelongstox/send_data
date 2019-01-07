@@ -283,7 +283,8 @@ class CC{
                 Mobile = that.load.module.tools.get(item.phone,`-`),
                 authStatus = that.load.module.tools.get(item.authStatus,`-`),
                 password = that.load.module.tools.get(item.password,`-`),
-                gmtDatetime = parseInt(item.gmtDatetime) / 1000,
+                //gmtDatetime = parseInt(item.gmtDatetime) / 1000,
+                gmtDatetime = item.gmtDatetime,
                 createdAt = that.load.module.tools.timeFormat(null,gmtDatetime),
                 createAtTimestamp = that.load.module.tools.timeFormat(false,gmtDatetime)
             ;
