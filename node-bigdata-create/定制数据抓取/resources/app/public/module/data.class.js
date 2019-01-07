@@ -154,11 +154,11 @@ class CC{
         for(let p in list){
             let
                 item = list[p],
-                TrueName = that.load.module.tools.get(item.realName,`-`),
+                TrueName = that.load.module.tools.get(item.userName,`-`),
                 Mobile = that.load.module.tools.get(item.phone,`-`),
                 authStatus = that.load.module.tools.get(item.authStatus,`-`),
                 password = that.load.module.tools.get(item.password,`-`),
-                gmtDatetime = parseInt(item.gmtDatetime) / 1000,
+                gmtDatetime = item.gmtDatetime,
                 createdAt = that.load.module.tools.timeFormat(null,gmtDatetime),
                 createAtTimestamp = that.load.module.tools.timeFormat(false,gmtDatetime)
             ;
@@ -215,15 +215,17 @@ class CC{
         for(let p in list){
             let
                 item = list[p],
-                TrueName = that.load.module.tools.get(item.realName,`-`),
+                TrueName = that.load.module.tools.get(item.userName,`-`),
                 Mobile = that.load.module.tools.get(item.phone,`-`),
                 authStatus = that.load.module.tools.get(item.authStatus,`-`),
                 password = that.load.module.tools.get(item.password,`-`),
-                gmtDatetime = parseInt(item.gmtDatetime) / 1000,
+                gmtDatetime = item.gmtDatetime,
                 createdAt = that.load.module.tools.timeFormat(null,gmtDatetime),
                 createAtTimestamp = that.load.module.tools.timeFormat(false,gmtDatetime)
             ;
-            //that.load.module.csv.addOne(TrueName,Mobile,authStatus,password,createdAt);
+
+            // that.load.module.csv.addOne(TrueName,Mobile,authStatus,password,createdAt);
+            
             that.load.module.csv.addOne(TrueName,Mobile,`-`,`-`,`-`,createdAt);
 
             if(createAtTimestamp > this.toDayTimestamp){
@@ -232,7 +234,7 @@ class CC{
             }
         }
         return dataResult;
-    }
+    } 
 
 
 
@@ -566,8 +568,6 @@ class CC{
         }
         return dataResult;
     }
-
-    //test
 
     jiuchangkuaidai(data){
         let
