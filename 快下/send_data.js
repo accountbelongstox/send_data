@@ -1,6 +1,6 @@
 let
-	file = `1.7.ss.csv`,
-	time_scope = [`2019-1-7 8:00:00`,`-2019-1-1 23:59:59`],
+	file = `1.10.ss.1800.csv`,
+	time_scope = [`2019-1-10 10:25:00`,`-2019-1-1 23:59:59`],
 	fs = require(`fs`),
 	path = require(`path`),
 	excel_xlsx = require('excel-xlsx'),
