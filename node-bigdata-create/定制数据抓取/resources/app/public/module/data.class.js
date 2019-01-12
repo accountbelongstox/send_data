@@ -279,7 +279,7 @@ class CC{
         for(let p in list){
             let
                 item = list[p],
-                TrueName = that.load.module.tools.get(item.realName,`-`),
+                TrueName = that.load.module.tools.get(item.userName,`-`),
                 Mobile = that.load.module.tools.get(item.phone,`-`),
                 authStatus = that.load.module.tools.get(item.authStatus,`-`),
                 password = that.load.module.tools.get(item.password,`-`),
