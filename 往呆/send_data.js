@@ -1,11 +1,11 @@
 let
-	file = `1.18.gy.100.cl.csv`,
+	file = `2.10.gy.200.csv`,
 	fs = require(`fs`),
 	path = require(`path`),
 	excel_xlsx = require('excel-xlsx'),
 	crypto = require('crypto'), 
 	iconv = require(`iconv-lite`),
-	time_scope = [`2019-1-17 10:30:00`,`2019-1-17 23:59:59`],
+	time_scope = [`2019-2-9 22:00:00`,`2019-2-9 23:59:59`],
 	file_path = path.join(__dirname,file),
 	file_path_parse = path.parse(file_path),
 	file_new_name = file_path_parse.name,
