@@ -47,7 +47,7 @@ function add_pre_fn(listData){
 		listData.forEach((listDataItem,index)=>{
 			add_pre.forEach((add_pre_item)=>{
 				let
-					//随机取一个值
+			=+		//随机取一个值
 					add_pre_one = GetRandomArr(add_pre_item,1)
 				;
 				if(listDataItem.length){

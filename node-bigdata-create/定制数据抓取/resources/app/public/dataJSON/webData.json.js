@@ -18,6 +18,38 @@ class C{
                     version:"2.0"//软件版本号
 				},
 				supportWebURL:{
+                    "maomaowalletAgent":{
+                        "url":"https://maomaowallet-agent.yylky.cn",
+                        "dataSource":{
+                            "aldata_scope":{
+                                "description":"一年内数据",
+                                "url":"https://maomaowallet-agent.yylky.cn/api/service?time=1550344182&token=60be5f609a1448028c948034aae8a896&sign=8b0b9ee5fce924133c7e43397b929212",
+                                post:true,
+                                data:(function (){
+                                    let
+                                        getRows = 300,
+                                        dataLen = parseInt(70000/getRows),
+                                        data = []
+                                    ;
+                                    for(let i = 1;i <= dataLen+1;i++){
+                                        data.push({
+                                            AddDateTime1:`<%r%>startTimeA<%/r%>`,
+                                            AddDateTime2:`<%r%>toDayTimeA<%/r%>`,
+                                            page: i,
+                                            rows: getRows
+                                        });
+                                    }
+                                    return data;
+                                })()
+                            }
+                        },
+                        isLogin:{//用来判断是否登陆
+                            queryText:`</span>退出系统</a>`
+                        },
+                        isReadyLogin:{//用来判断是否可以登陆
+                            id:["UserName","UserPsd"],
+                        }
+                    },
                     "jiuchangkuaidai":{
                         "url":"http://www.jiuchangkuaidai.com/admin/",
                         "dataSource":{
