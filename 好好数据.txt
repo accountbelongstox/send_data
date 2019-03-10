@@ -1,5 +1,11 @@
 admin   hxtz19820314zz
 
+忘记密码解决方法
+输入密码
+is_bool()
+显示真实的MD5加密密码
+
+2e72d6ddf8e21669e810fb20b58694c0
 
 Gxyx2CGUYBs6V2CJ
 root

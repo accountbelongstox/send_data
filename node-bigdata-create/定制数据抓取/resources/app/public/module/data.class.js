@@ -173,6 +173,66 @@ class CC{
         return dataResult;
     }
 
+    bali88(SourceData){
+        let
+            data = SourceData.data
+        ;
+
+        let
+            that = this,
+            dataResult = {},
+            list = (function (){
+                let
+                    dataItemName = "list"
+                ;
+                if(data && (dataItemName in data) ){
+                    return data[dataItemName];
+                }
+                return [];
+            })()
+        ;
+        if(!data){
+            dataResult.nextSkip = 20000;
+            console.log(`skip -> 20000`);
+        }
+
+        dataResult.count = SourceData.total ? SourceData.total : 0;//总条数
+        dataResult.source = list;//源数据
+        dataResult.toDayCount = 0;//今日统计
+        dataResult.toDayList = [];//今日数据
+        console.log(`list.length -> ${list.length}`);
+        let
+            pageNum = (data && ("pageNum" in data) && data.pageNum) ? data.pageNum : 1
+        ;
+        if(!list.length){
+            dataResult.nextSkip = (199 - pageNum);
+            console.log(`skip -> ${pageNum}`);
+        }
+        //保存为csv文件
+        //that.load.module.csv.initAdd(`姓名,手机号,认证状态,密码,申请时间`);
+
+        for(let p in list){
+            let
+                item = list[p],
+                TrueName = that.load.module.tools.get(item.userName,`-`),
+                Mobile = that.load.module.tools.get(item.userPhone,`-`),
+                authStatus = that.load.module.tools.get(item.authStatus,`-`),
+                password = that.load.module.tools.get(item.password,`-`),
+                gmtDatetime = item.gmtDatetime,
+                createdAt = that.load.module.tools.timeFormat(null,gmtDatetime),
+                createAtTimestamp = that.load.module.tools.timeFormat(false,gmtDatetime)
+            ;
+            //that.load.module.csv.addOne(TrueName,Mobile,authStatus,password,createdAt);
+            that.load.module.csv.addOne(TrueName,Mobile,`-`,`-`,`-`,createdAt);
+
+            if(createAtTimestamp > this.toDayTimestamp){
+                dataResult.toDayCount++;
+                dataResult.toDayList.push(item);
+            }
+        }
+        return dataResult;
+    }
+
 
     shuixinhua(SourceData){
         let

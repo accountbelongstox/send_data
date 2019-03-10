@@ -18,6 +18,38 @@ class C{
                     version:"2.0"//软件版本号
 				},
 				supportWebURL:{
+				
+                    "bali88":{
+                        "url":"http://app.bali88.cn/channel/channelLogin.html",
+                        "dataSource":{
+                            "allUser": {
+                                "description": "全部用户数据",
+                                "url": (function (){
+                                    let
+                                        allUserLen = 300,
+                                        pageNoLen = 200,
+                                        allUser = []
+                                    ;
+                                    for(let i =10;i<allUserLen;i++){
+                                        for(let j =1;j<pageNoLen;j++){ // http://www.shuixinhua.com/api/channel/findMyMember?phone=&userName=&pageNo=1&pageSize=10&gmtGatetime=channelId=10
+                                            allUser.push(`http://47.110.156.58/api/channel/findMyMember?phone=&userName=&pageNo=${j}&pageSize=1500&channelId=${i}&searchDate=`);
+                                        }
+                                    }
+                                    return allUser;
+                                })()
+                            },
+                            "alldata": {
+                                "description": "全部数据",
+                                "url": `http://47.110.156.58/api/channel/findMyMember?phone=&userName=&pageNo=1&pageSize=1000000&searchDate=`
+                            }
+                        },
+                        isLogin:{//用来判断是否登陆
+                            queryText:`退出登陆`//通过读取URL判断是否登陆
+                        },
+                        isReadyLogin:{//用来判断是否可以登陆
+                            id:["userName","password"],
+                        }
+                    },
                     "maomaowalletAgent":{
                         "url":"https://maomaowallet-agent.yylky.cn",
                         "dataSource":{
