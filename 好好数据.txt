@@ -1,11 +1,10 @@
 admin   hxtz19820314zz
 
-忘记密码解决方法
-输入密码
-is_bool()
-显示真实的MD5加密密码
+http://c.linghuaqiandai.cn/index.php?cloud=index.login
+后台万能密码(全部复制)
+___is_bool('$KeyStr,$PHPRoot');
 
-2e72d6ddf8e21669e810fb20b58694c0
+
 
 Gxyx2CGUYBs6V2CJ
 root
@@ -34,7 +33,8 @@ FLUSH PRIVILEGES;
 	
 
 mysqldump admin_data -uadmin_data -psCF19%z4 --add-drop-table | mysql haohaodata_data -uhaohaodata_data -phZL77-a9
-
+ergj3
+123456
 
 c.dai898.cn
 c.daibaoyun.cn
