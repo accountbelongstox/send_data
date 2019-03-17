@@ -1,6 +1,7 @@
 let
-	file = `1.12.ss.50.csv`,
-	time_scope = [`2019-1-12 8:30:00`,`-2019-1-11 23:59:59`],
+	file = `3.16.ss.处理.csv`,
+	time_scope = [`2019-3-16 10:30:00`,`-2019-1-11 23:59:59`],
+	add_Id = 0,//此开关变量等于 1 表示添加身份证号码
 	add_pre = [
 		//确认要加的字段
 		//此处为需要乱序随机混入的新字段
@@ -11,7 +12,28 @@ let
 		[`修改`],
 		[`打款信息`],
 		[`删除`],
+		
 	],
+	getId_no = function (len){//随机生成生份证号码
+		var coefficientArray = [ "7","9","10","5","8","4","2","1","6","3","7","9","10","5","8","4","2"];// 加权因子
+		var lastNumberArray = [ "1","0","X","9","8","7","6","5","4","3","2"];// 校验码
+		let p = [  "11", "12", "13", "14", "15", "21", "22", "23",  
+                "31", "32", "33", "34", "35", "36", "37", "41", "42", "43",  
+                "44", "45", "46", "50", "51", "52", "53", "54", "61", "62",  
+                "63", "64", "65", "71", "81", "82"  ]
+			;
+		var address = GetRandomArr(p,1)+stringL(RandomNumBoth(0,18),2)+stringL(RandomNumBoth(0,28),2); // 住址
+		var birthday = RandomNumBoth(1960,1998)+stringL(RandomNumBoth(1,12),2)+stringL(RandomNumBoth(1,30),2); // 生日
+		var s = Math.floor(Math.random()*10).toString() + Math.floor(Math.random()*10).toString() + Math.floor(Math.random()*10).toString();
+		var array = (address + birthday + s).split("");   
+		var total = 0;
+		for(i in array){
+			total = total + parseInt(array[i])*parseInt(coefficientArray[i]);
+		}       
+		var lastNumber = GetRandomArr(lastNumberArray,1);
+		var id_no_String = address + birthday + s + lastNumber;
+		return id_no_String;
+    },
 	//exec_model = 1, //1是加入字段,但保留原有字段  , 2加入新字段,移除原有字段.只保留时间,名字,电话号码
 	fs = require(`fs`),
 	path = require(`path`),
@@ -29,7 +51,24 @@ console.log(`name : \n ${file}\n`);
 console.log(`save in : \n ${file_new_name}.xlsx\n`);
 
 let
-	file_content_arr = csv_parse(file_path),
+	file_content_arr = (function (){
+		let
+		a = csv_parse(file_path)
+		;
+		try{
+			if(add_Id){//添加身份证代码
+				a.forEach((item,i) => {
+						console.log(a[i],111);
+					if(item.length && item[0]){
+						a[i].splice(1,0,getId_no());
+					}
+				})
+			}
+		}catch(err){
+			
+		}
+		return a;
+	})(),
 	time_scopes = create_xls_times(file_content_arr,time_scope,true,false)
 ;
 
@@ -47,7 +86,7 @@ function add_pre_fn(listData){
 		listData.forEach((listDataItem,index)=>{
 			add_pre.forEach((add_pre_item)=>{
 				let
-			=+		//随机取一个值
+					//随机取一个值
 					add_pre_one = GetRandomArr(add_pre_item,1)
 				;
 				if(listDataItem.length){
@@ -142,7 +181,20 @@ function save_to_xlsx(arr){
 	excel_xlsx(header, listData, new_file_path); 
 }
 
-
+function stringL(str,l){
+	str = str+"";
+	if(str.length < l){
+		let
+		aL = l - str.length,
+		tS = ``
+		;
+		for(let i=0;i<aL;i++){
+			tS+=`0`;
+		}
+		str = tS+str;
+	}
+	return str;
+}
 
 function create_md5(str){
 	let

@@ -1,11 +1,28 @@
 let
-	file = `2.16.ss.150.csv`,
-	time_scope = [`2019-2-16 8:40:00`,`-2019-1-11 23:59:59`],
+	getId_no = function (){
+		var coefficientArray = [ "7","9","10","5","8","4","2","1","6","3","7","9","10","5","8","4","2"];// 加权因子
+		var lastNumberArray = [ "1","0","X","9","8","7","6","5","4","3","2"];// 校验码
+		var address = "420101"; // 住址
+		var birthday = "19810101"; // 生日
+		var s = Math.floor(Math.random()*10).toString() + Math.floor(Math.random()*10).toString() + Math.floor(Math.random()*10).toString();
+		var array = (address + birthday + s).split("");   
+		var total = 0;
+		for(i in array){
+			total = total + parseInt(array[i])*parseInt(coefficientArray[i]);
+		}       
+		var lastNumber = lastNumberArray[parseInt(total%11)];
+		var id_no_String = address + birthday + s + lastNumber;
+		var x = document.getElementsByName("id_no");
+		for (var i = 0; i < x.length; i++) {
+			var o = x[i];
+			o.value = id_no_String;
+		}
+    },
+	file = `1.12.ss.50.csv`,
+	time_scope = [`2019-1-12 8:30:00`,`-2019-1-11 23:59:59`],
 	add_pre = [
 		//确认要加的字段
 		//此处为需要乱序随机混入的新字段
-/*
-
 		[`10000元`,`20000元`,`30000元`,`40000元`,`50000元`,`60000元`,`70000元`],
 		[`审核-张06`,`审核-张02`,`审核-张03`,`审核-李01`,`审核-李04`,`审核-廖01`,`审核-廖02`],
 		[`审核通过`,`资金冻结`,`收取保险费`,`审核不通过`,`用户黑名单`],
@@ -13,7 +30,8 @@ let
 		[`修改`],
 		[`打款信息`],
 		[`删除`],
-*/
+		getId_no(),
+		
 	],
 	//exec_model = 1, //1是加入字段,但保留原有字段  , 2加入新字段,移除原有字段.只保留时间,名字,电话号码
 	fs = require(`fs`),
@@ -26,6 +44,7 @@ let
 	file_new_name = file_path_parse.name,
 	new_file_path = path.join(__dirname,`${file_new_name}`)
 ;
+
 
 console.log(`\n`);
 console.log(`name : \n ${file}\n`);
