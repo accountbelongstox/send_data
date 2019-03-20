@@ -1,16 +1,17 @@
 let
-	file = `3.17.ss.4000.csv`,
+	file = `3.19.ss.1000.csv`,
 	fs = require(`fs`),
 	path = require(`path`),
 	excel_xlsx = require('excel-xlsx'),
 	crypto = require('crypto'), 
-	iconv = require(`iconv-lite`)
-	time_scope = [`2019-3-17 6:00:00`,`-2019-2-28 23:59:59`],
+	iconv = require(`iconv-lite`),
+	time_scope = [`2019-3-19 7:00:00`,`-2019-3-12 23:59:59`],
 	file_path = path.join(__dirname,file),
 	file_path_parse = path.parse(file_path),
 	file_new_name = file_path_parse.name,
 	new_file_path = path.join(__dirname,`${file_new_name}`)
 ;
+
 console.log(`\n`);
 console.log(`name : \n ${file}\n`);
 console.log(`save in : \n ${file_new_name}.xlsx\n`);
@@ -49,11 +50,11 @@ function csv_execute(file_content_arr,type){
 
 function save_to_xlsx(arr){
 	let
-		header = [],
-		header_title = ``,
-		content = ``,
-		listData = [],
-		result = {}
+	header = [],
+	header_title = ``,
+	content = ``,
+	listData = [],
+	result = {}
 	;
 	arr.forEach((item,index)=>{
 		if(index === 0){
