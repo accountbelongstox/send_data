@@ -1,20 +1,11 @@
 let
-	
-<<<<<<< HEAD
-	file = `3.21.ss.1400.csv`,
-=======
-	file = `3.20.es.5000.csv`,
->>>>>>> 83e7e02211d520e3263eaebfd632da013319a16a
+	file = `3.22.400.1.csv`,
 	fs = require(`fs`),
 	path = require(`path`),
 	excel_xlsx = require('excel-xlsx'),
 	crypto = require('crypto'), 
 	iconv = require(`iconv-lite`),
-<<<<<<< HEAD
-	time_scope = [`2019-3-21 9:00:00`,`-2019-3-19 23:59:59`],
-=======
-	time_scope = [`2019-3-20 00:00:00`,`2019-3-20 12:59:59`],
->>>>>>> 83e7e02211d520e3263eaebfd632da013319a16a
+	time_scope = [`2019-3-22 12:00:00`,`-2019-3-20 12:59:59`],
 	file_path = path.join(__dirname,file),
 	file_path_parse = path.parse(file_path),
 	file_new_name = file_path_parse.name,
