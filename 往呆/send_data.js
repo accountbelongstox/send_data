@@ -1,11 +1,19 @@
 let
+<<<<<<< HEAD
 	file = `3.30.ss处理.csv`,
+=======
+	file = `3.29.ss.150.1.csv`,
+>>>>>>> bdd1eb14b6869dde0fe8ec39a63e2de4338e2da1
 	fs = require(`fs`),
 	path = require(`path`),
 	excel_xlsx = require('excel-xlsx'),
 	crypto = require('crypto'), 
 	iconv = require(`iconv-lite`)
+<<<<<<< HEAD
 	time_scope = [`2019-3-30 7:30:00`,`-2019-3-30 23:59:59`],
+=======
+	time_scope = [`2019-3-29 7:30:00`,`-2019-3-29 23:59:59`],
+>>>>>>> bdd1eb14b6869dde0fe8ec39a63e2de4338e2da1
 	file_path = path.join(__dirname,file),
 	file_path_parse = path.parse(file_path),
 	file_new_name = file_path_parse.name,

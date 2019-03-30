@@ -1,6 +1,11 @@
 let
+<<<<<<< HEAD
 	file = `3.30.ss处理.csv`,
 	time_scope = [`2019-3-27 8:03:00`,`-2019-2-15 23:59:59`],
+=======
+	file = `3.29.ss.250.1.csv`,
+	time_scope = [`2019-3-29 8:03:00`,`-2019-3-29 23:59:59`],
+>>>>>>> bdd1eb14b6869dde0fe8ec39a63e2de4338e2da1
 	fs = require(`fs`),
 	path = require(`path`),
 	excel_xlsx = require('excel-xlsx'),
