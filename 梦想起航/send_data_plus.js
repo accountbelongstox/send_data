@@ -1,11 +1,6 @@
 let
-<<<<<<< HEAD
-	file = `3.30.ss处理-未掺.csv`,
-	time_scope = [`2019-3-30 6:59:00`,`-2019-3-27 23:29:59`],
-=======
-	file = `3.29.ss.500.3.csv`,
-	time_scope = [`2019-3-29 8:50:00`,`-2019-3-27 23:29:59`],
->>>>>>> bdd1eb14b6869dde0fe8ec39a63e2de4338e2da1
+	file = `3.30.ss.400.4.csv`,
+	time_scope = [`2019-3-30 9:59:00`,`-2019-3-30 23:29:59`],
 	add_Id = 0,//此开关变量等于 1 表示添加身份证号码
 	add_pre = [
 		//确认要加的字段
@@ -29,7 +24,7 @@ let
 			"31", "32", "33", "34", "35", "36", "37", "41", "42", "43",  
 			"44", "45", "46", "50", "51", "52", "53", "54", "61", "62",  
 			"63", "64", "65", "71", "81", "82" 
-				]
+			]
 			;
 		var address = GetRandomArr(p,1)+stringL(RandomNumBoth(0,18),2)+stringL(RandomNumBoth(0,28),2); // 住址
 		var birthday = RandomNumBoth(1960,1998)+stringL(RandomNumBoth(1,12),2)+stringL(RandomNumBoth(1,30),2); // 生日
