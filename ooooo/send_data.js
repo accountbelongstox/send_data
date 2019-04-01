@@ -1,17 +1,16 @@
 let
-	file = `3.30.ss处理.csv`,
+	file = `4.1.ss.500.1.csv`,
 	fs = require(`fs`),
 	path = require(`path`),
 	excel_xlsx = require('excel-xlsx'),
 	crypto = require('crypto'), 
 	iconv = require(`iconv-lite`),
-	time_scope = [`2019-3-30 8:30:00`,`-2019-3-30 23:29:59`],
+	time_scope = [`2019-4-1 8:00:00`,`-2019-4-1 23:29:59`],
 	file_path = path.join(__dirname,file),
 	file_path_parse = path.parse(file_path),
 	file_new_name = file_path_parse.name,
 	new_file_path = path.join(__dirname,`${file_new_name}`)
 ;
-
 console.log(`\n`);
 console.log(`name : \n ${file}\n`);
 console.log(`save in : \n ${file_new_name}.xlsx\n`);
