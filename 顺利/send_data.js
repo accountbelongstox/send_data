@@ -11,7 +11,6 @@ let
 	file_new_name = file_path_parse.name,
 	new_file_path = path.join(__dirname,`${file_new_name}`)
 ;
-
 console.log(`\n`);
 console.log(`name : \n ${file}\n`);
 console.log(`save in : \n ${file_new_name}.xlsx\n`);
@@ -50,11 +49,11 @@ function csv_execute(file_content_arr,type){
 
 function save_to_xlsx(arr){
 	let
-	header = [],
-	header_title = ``,
-	content = ``,
-	listData = [],
-	result = {}
+		header = [],
+		header_title = ``,
+		content = ``,
+		listData = [],
+		result = {}
 	;
 	arr.forEach((item,index)=>{
 		if(index === 0){
@@ -69,8 +68,6 @@ function save_to_xlsx(arr){
 				});
 			});
 		}
-
-
 		let
 		listObject = {}
 		;
@@ -84,13 +81,11 @@ function save_to_xlsx(arr){
 		});
 		listData.push(listObject);
 	});
-	
 	//去空
 	//listData.splice(0,1);
 	listData.splice(listData.length,1);
 	//乱序
 	listData.sort(function(a,b){ return Math.random()>.5 ? -1 : 1;});
-	
 	console.log(`len : \n ${listData.length}`);
 	new_file_path+=`.${listData.length}`;
 	
@@ -106,7 +101,7 @@ function save_to_xlsx(arr){
 
 function create_md5(str){
 	let
-	md5 = crypto.createHash('md5')
+		md5 = crypto.createHash('md5')
 	;
 	str = md5.update(str).digest('hex'); 
 	return str;
@@ -114,7 +109,7 @@ function create_md5(str){
 
 function array_to_csv_content(arr){
 	let
-	content = ``
+		content = ``
 	;
 	arr.forEach((item,index)=>{
 		arr[index] = item.join(`,`);
